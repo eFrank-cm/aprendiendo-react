@@ -68,7 +68,7 @@ export const App = () => {
                     <button type='submit'>Buscar</button>
                 </form>
                 <div className='sort'>
-                    <label>Ordenar por Año</label>
+                    <label>Ordenar por Titulo</label>
                     <input type="checkbox" onChange={handleSort} checked={sort} />
                 </div>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
