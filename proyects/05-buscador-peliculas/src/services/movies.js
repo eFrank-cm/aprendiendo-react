@@ -1,4 +1,4 @@
-import KEY from './../APIKEY.json'
+import { API_KEY } from './../APIKEY.json'
 
 export const searchMovies = async ({ search }) => {
     // si no hay search
@@ -6,7 +6,7 @@ export const searchMovies = async ({ search }) => {
 
     try {
         // get movies from URL
-        const url = `https://www.omdbapi.com/?apikey=${KEY.API_KEY}&s=${search}`
+        const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
         const res = await fetch(url)
         const json = await res.json()
         const movies = json.Search
